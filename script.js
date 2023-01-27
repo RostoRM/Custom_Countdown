@@ -35,10 +35,8 @@ const updateDOM = () => {
     const hours = Math.floor((distance % day) / hour);
     const minutes = Math.floor((distance % hour) / minute);
     const seconds = Math.floor((distance % minute) / second);
-
     // Hide Input
     inputContainer.hidden = true;
-
     //  If the countdown has ended, show complete container
     if (distance < 0) {
       countdownEl.hidden = true;
